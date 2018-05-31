@@ -4,10 +4,15 @@ import PropTypes from 'prop-types';
 import '../styles/components/_header.sass';
 
 class Header extends React.Component {
+  handleClick = (e) => {
+    let { onBackClick } = this.props;
+    onBackClick();
+  };
+
   render() {
     return (
       <section className="header">
-        <a className="header__btn" href="#">
+        <a className="header__btn" onClick={this.handleClick.bind(this)}>
           <img className="header__arrow" src={require('../img/arrow.png')}/>
           <span className="basic_exp_semibold">Go Back</span>
         </a>

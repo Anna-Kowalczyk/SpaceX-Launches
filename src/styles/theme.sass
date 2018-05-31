@@ -44,6 +44,9 @@ a
 .list-item
   padding: 0 0.2em
 
+.list-item--launch
+  padding: 0
+
 // ## Typography ##
 
 html
@@ -65,6 +68,9 @@ hr
 .list-item--title
   color: #a7a9ac
 
+.list-item--date
+  letter-spacing: 0.6em
+
 .header_big
   font-weight: 600
   font-size: 36px
@@ -81,11 +87,12 @@ hr
   color: #ffffff
   text-transform: uppercase
 
-// .header_sml
-//   font-weight: normal
-//   font-size: 24px
-//   color: #0f1112
-//   text-transform: uppercase
+.header_sml
+  font-weight: normal
+  font-size: 24px
+  color: #a7a9ac
+  text-transform: uppercase
+  letter-spacing: 18px
 
 .basic_exp_semibold
   font-weight: 600
@@ -119,6 +126,10 @@ hr
   border: 1px solid #ffffff
   border-radius: 1.5em
   text-transform: uppercase
+  &:hover
+    color: #0f1112
+    background-color: #ffffff
+    cursor: pointer
 
 // ##Nav##
 .nav

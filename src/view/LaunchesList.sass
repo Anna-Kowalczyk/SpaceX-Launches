@@ -1,0 +1,33 @@
+@import "../styles/_variables"
+
+.launchesList
+  background-color: #0f1112
+  color: #fff
+
+.launch
+  padding: 50px 0 100px
+
+.launch__items
+  width: 50%
+  &:hover
+    cursor: pointer
+
+
+.launch__items:nth-child(odd)
+  border-right: 1px dashed #666666
+  text-align: left
+
+.launch__items:nth-child(even)
+  border-left: 1px dashed #666666
+  margin-left: 50%
+  text-align: right
+
+.launch__item
+  padding: 20px
+
+.launch__arrow
+  border: 0 solid #ccac5b
+  border-top-width: 2px
+
+.lauch__arrow::after
+  content: url(require('../img/arrow_pointer.png'))

@@ -11,19 +11,21 @@ class LaunchDetails extends React.Component {
     launch: PropTypes.object,
     launchSite: PropTypes.object,
     rocket: PropTypes.object,
+    onBackClick: PropTypes.func,
   }
   render() {
     const { launch } = this.props;
     const { launchSite } = this.props;
     const { rocket } = this.props;
+    const { onBackClick } = this.props;
 
     return (
       <div>
-        <Header />
-        <InfoSection          
+        <Header onBackClick={onBackClick}/>
+        <InfoSection
           launch={launch}
           launchSite={launchSite}
-          rocket={rocket}
+          rocket={rocket}          
         />
         <LinksSection />
         <Footer />
