@@ -29,6 +29,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .header__btn:hover {
+    cursor: pointer; }
 
 .header__arrow {
   padding: 1em;
@@ -61,6 +63,58 @@
 .footer__item::after {
   content: "|";
   padding-left: 0.5em; }
+
+.heroSection {
+  margin: auto;
+  padding-top: 50px;
+  text-align: center; }
+
+.heroImg {
+  background-image: url(moon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  padding-top: 25%; }
+
+.heroSection__logo {
+  max-width: 60%;
+  padding-top: 10%;
+  margin-left: 8%; }
+
+.launchesList {
+  background-color: #0f1112;
+  color: #fff; }
+
+.launch {
+  padding: 50px 0 100px; }
+
+.launch__items {
+  width: 50%; }
+  .launch__items:hover {
+    cursor: pointer; }
+
+.launch__items:nth-child(odd) {
+  border-right: 1px dashed #666666;
+  text-align: left; }
+
+.launch__items:nth-child(even) {
+  border-left: 1px dashed #666666;
+  margin-left: 50%;
+  text-align: right; }
+
+.launch__item {
+  padding: 20px; }
+
+.launch__arrow {
+  border: 0 solid #ccac5b;
+  border-top-width: 2px; }
+
+.lauch__arrow::after {
+  content: url(require("../img/arrow_pointer.png")); }
 
 body {
   margin: 0; }
@@ -111,6 +165,9 @@ a {
 .list-item {
   padding: 0 0.2em; }
 
+.list-item--launch {
+  padding: 0; }
+
 html {
   font-family: OpenSans, sans-serif;
   font-weight: 400;
@@ -129,6 +186,9 @@ hr {
 .list-item--title {
   color: #a7a9ac; }
 
+.list-item--date {
+  letter-spacing: 0.6em; }
+
 .header_big {
   font-weight: 600;
   font-size: 36px;
@@ -144,6 +204,13 @@ hr {
   letter-spacing: 18px;
   color: #ffffff;
   text-transform: uppercase; }
+
+.header_sml {
+  font-weight: normal;
+  font-size: 24px;
+  color: #a7a9ac;
+  text-transform: uppercase;
+  letter-spacing: 18px; }
 
 .basic_exp_semibold {
   font-weight: 600;
@@ -175,6 +242,10 @@ hr {
   border: 1px solid #ffffff;
   border-radius: 1.5em;
   text-transform: uppercase; }
+  .btn:hover {
+    color: #0f1112;
+    background-color: #ffffff;
+    cursor: pointer; }
 
 .nav {
   display: -webkit-box;
